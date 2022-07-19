@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Coffee Time</string>
+    <string name="login">Log In | Sign Up</string>
+    <string name="signin">Sign In</string>
+    <string name="about_dialog_title">About</string>
+    <string name="about_dialog_message">For more information please contact us<a herf="https://instagram.com/sepehrayobi">Instagram</a></string>
+    <string name="accept">Accept</string>
+    <string name="guest">Guest</string>
+</resources>
