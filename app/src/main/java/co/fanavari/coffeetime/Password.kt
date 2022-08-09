@@ -1,5 +1,3 @@
 package co.fanavari.coffeetime
 
-open class UserData{
-    var userPassword = "0"
-}
+lateinit var password:String

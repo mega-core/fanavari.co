@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeNav"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/shopNav"
+        android:enabled="true"
+        android:icon="@drawable/ic_shop"
+        android:title="Shop" />
+    <item
+        android:id="@+id/learnNav"
+        android:enabled="true"
+        android:icon="@drawable/ic_learn"
+        android:title="Learn" />
+    <item
+        android:id="@+id/settingsNav"
+        android:enabled="true"
+        android:icon="@drawable/ic_settings"
+        android:title="Settings" />
+</menu>

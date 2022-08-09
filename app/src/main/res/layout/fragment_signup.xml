@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout13"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full name"
+        app:endIconMode="clear_text"
+        app:counterEnabled="true"
+        app:counterMaxLength="30"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputLayout13_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout14"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Phone number"
+        app:prefixText="+98"
+        app:endIconMode="clear_text"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        app:helperTextEnabled="true"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout13"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout13"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout13">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputLayout14_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="10"
+            android:inputType="phone"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout15"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="New password"
+        android:layout_marginTop="10dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="16"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout14"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout14"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout14">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputLayout15_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="16"
+            android:longClickable="false"
+            android:inputType="numberPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout17"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Re-enter password"
+        app:counterEnabled="true"
+        app:counterMaxLength="16"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout15"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout15"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout15">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputLayout17_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:longClickable="false"
+            android:maxLength="16" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout17"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout17" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
