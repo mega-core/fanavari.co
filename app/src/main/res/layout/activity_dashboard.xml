@@ -12,14 +12,16 @@
         android:id="@+id/floatingActionButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
         android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
         android:clickable="true"
+        android:contentDescription="@string/fab_logout"
         android:focusable="true"
         android:theme="@style/SplashScreenTheme"
         app:layout_constraintBottom_toBottomOf="@+id/flFragment"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_power" />
+        app:srcCompat="@drawable/ic_power"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
 
     <FrameLayout
         android:id="@+id/flFragment"
@@ -46,6 +48,11 @@
             android:id="@+id/navBottom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            app:elevation="8dp"
+            android:background="@drawable/button_background"
             app:itemRippleColor="@color/brown_100"
             app:menu="@menu/bottom_nav_menu" />
 

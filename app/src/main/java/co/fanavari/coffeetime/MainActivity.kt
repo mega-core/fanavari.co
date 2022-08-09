@@ -29,6 +29,9 @@ class MainActivity : AppCompatActivity() {
 
         }
     }
+    public fun finisher(activity: MainActivity){
+        activity.finish()
+    }
 
 
 }

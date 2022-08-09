@@ -1,12 +1,10 @@
 package co.fanavari.coffeetime.fragmentLoginSignup
 
+import android.app.Activity
 import android.content.Intent
 import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
-import co.fanavari.coffeetime.Constant
-import co.fanavari.coffeetime.DashboardActivity
-import co.fanavari.coffeetime.R
-import co.fanavari.coffeetime.password
+import co.fanavari.coffeetime.*
 import com.google.android.material.textfield.TextInputLayout
 import com.google.android.material.textfield.TextInputLayout.END_ICON_PASSWORD_TOGGLE
 import kotlinx.android.synthetic.main.fragment_signup.*
@@ -47,6 +45,7 @@ class SignupFragment : Fragment(R.layout.fragment_signup) {
                         putExtra(Constant.PASS, textInputLayout15_text.text.toString())
                         password = textInputLayout15_text.text.toString()
                         startActivity(this)
+
                     }
 
             else {

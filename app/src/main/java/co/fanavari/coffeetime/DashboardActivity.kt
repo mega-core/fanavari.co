@@ -11,11 +11,9 @@ import co.fanavari.coffeetime.fragment.Dashboard.ShopFragment
 import kotlinx.android.synthetic.main.activity_dashboard.*
 
 class DashboardActivity : AppCompatActivity() {
-    private lateinit var bind: ActivityDashboardBinding
     override fun onCreate(savedInstanceState: Bundle?) {
-        bind = ActivityDashboardBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
-        setContentView(bind.root)
+        setContentView(R.layout.activity_dashboard)
         val homeFragment = HomeFragment()
         val shopFragment = ShopFragment()
         val learnFragment = LearnFragment()
